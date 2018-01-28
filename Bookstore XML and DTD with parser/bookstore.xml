@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (book+)>
+<!ELEMENT book (name, cost, category)>
+<!ATTLIST book id CDATA #REQUIRED
+          edition CDATA #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+]>
+
+<bookstore>
+  <book id="1" edition= "2.0">
+    <name>Harry Potter and the Chamber of Secrets</name>
+    <cost>$9</cost>
+    <category> Fiction</category>
+  </book>
+  <book id="2">
+    <name>The Shining</name>
+    <cost>$10</cost>
+    <category>Horror</category>
+  </book>
+  <book id="3">
+    <name>If There's No Tomorrow</name>
+    <cost>$7</cost>
+    <category>Romance</category>
+  </book>
+  <book id="4" edition= "3.0">
+    <name>Grit</name>
+    <cost>$15</cost>
+    <category>Business</category>
+  </book>
+</bookstore>

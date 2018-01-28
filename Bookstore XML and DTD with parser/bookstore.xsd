@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xs of bookstore-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="bookstore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="book" minOccurs="0"
+          maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string"></xs:element>
+              <xs:element name="cost" type="xs:string"></xs:element>
+              <xs:element name="category" type="xs:string"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" use="required"/>
+            <xs:attribute name="edition" type="xs:float" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
